@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92B689E228B219A0046A111 /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B689D228B219A0046A111 /* ListTVC.swift */; };
 		A95594622284955D00845C35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95594612284955D00845C35 /* AppDelegate.swift */; };
 		A95594642284955D00845C35 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95594632284955D00845C35 /* LoginVC.swift */; };
 		A95594672284955D00845C35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95594652284955D00845C35 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A92B689D228B219A0046A111 /* ListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
 		A955945E2284955D00845C35 /* LeadCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeadCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95594612284955D00845C35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A95594632284955D00845C35 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				A955946A2284955E00845C35 /* LaunchScreen.storyboard */,
 				A955946D2284955E00845C35 /* Info.plist */,
 				A95594732284A7A800845C35 /* FormVC.swift */,
+				A92B689D228B219A0046A111 /* ListTVC.swift */,
 			);
 			path = LeadCollection;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A95594642284955D00845C35 /* LoginVC.swift in Sources */,
+				A92B689E228B219A0046A111 /* ListTVC.swift in Sources */,
 				A95594622284955D00845C35 /* AppDelegate.swift in Sources */,
 				A95594742284A7A800845C35 /* FormVC.swift in Sources */,
 			);
