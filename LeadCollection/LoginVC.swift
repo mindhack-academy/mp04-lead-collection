@@ -29,6 +29,8 @@ class LoginVC: UIViewController {
         
 //        print(emailTextField.text, passwordTextField.text)
         
+        // a doua modificare
+        
         if emailTextField.text == "email@me.com",
             passwordTextField.text == "pass" {
             // autentificare valida
