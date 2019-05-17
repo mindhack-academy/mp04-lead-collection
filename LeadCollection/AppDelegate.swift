@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        var user1 = User()
+        var user2 = User()
+        var user3 = User()
+        var user4 = User()
+        var user5 = User()
+        
+        print("initCount \(User.initCount)")
+        
         return true
     }
 
