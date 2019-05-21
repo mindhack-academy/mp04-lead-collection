@@ -40,7 +40,9 @@ class LoginVC: UIViewController {
             errorLabel.isHidden = true
             
             if let formVC = self.storyboard?.instantiateViewController(withIdentifier: "FormVC") {
-                self.present(formVC, animated: true, completion: nil)
+//                self.present(formVC, animated: true, completion: nil)
+//                self.navigationController?.present(formVC, animated: true, completion: nil)
+                self.navigationController?.pushViewController(formVC, animated: true)
             }
             
         } else {

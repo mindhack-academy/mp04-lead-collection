@@ -29,19 +29,19 @@ class FormVC: UIViewController {
     }
     
     @IBAction func sendButtonPressed(_ sender: Any) {
-        print(
-            firstNameTextField.text,
-            lastNameTextField.text,
-            emailTextField.text,
-            phoneTextField.text,
-            
-            technologySegmentedControl.selectedSegmentIndex,
-            technologySegmentedControl.titleForSegment(at: technologySegmentedControl.selectedSegmentIndex),
-            
-            reasonTextView.text,
-            
-            contactDatePicker.date
-            )
+//        print(
+//            firstNameTextField.text,
+//            lastNameTextField.text,
+//            emailTextField.text,
+//            phoneTextField.text,
+//
+//            technologySegmentedControl.selectedSegmentIndex,
+//            technologySegmentedControl.titleForSegment(at: technologySegmentedControl.selectedSegmentIndex),
+//
+//            reasonTextView.text,
+//
+//            contactDatePicker.date
+//            )
         
         var user: User = User()
         user.firstName = firstNameTextField.text
@@ -60,8 +60,33 @@ class FormVC: UIViewController {
         
         print("----- FORM DATA -----")
         print(formData)
+        
+        // add to StorageManager
+        StorageManager.shared.addData(formData: formData)
+        
+        // print StorageManager data
+        print(StorageManager.shared.getData())
+        
+        // reset form
+        resetForm()
     }
     
     @IBAction func resetButtonPressed(_ sender: Any) {
+        resetForm()
+    }
+    
+    func resetForm() {
+        firstNameTextField.text = ""
+        lastNameTextField.text = ""
+        emailTextField.text = ""
+        phoneTextField.text = ""
+        
+        technologySegmentedControl.selectedSegmentIndex = 0
+        
+        reasonTextView.text = ""
+        
+        contactDatePicker.date = Date()
+        
+        firstNameTextField.becomeFirstResponder()
     }
 }

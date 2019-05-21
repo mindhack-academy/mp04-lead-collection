@@ -19,16 +19,10 @@ class FormData {
 }
 
 class User {
-    static var initCount: Int = 0
-    
     var firstName: String?
     var lastName: String?
     var email: String?
     var phone: String?
-
-    init() {
-        User.initCount = User.initCount + 1
-    }
 }
 
 class Technology {

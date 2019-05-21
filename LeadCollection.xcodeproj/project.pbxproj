@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A922D2CA22945877005194D9 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922D2C922945877005194D9 /* StorageManager.swift */; };
 		A92B689E228B219A0046A111 /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B689D228B219A0046A111 /* ListTVC.swift */; };
 		A95594622284955D00845C35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95594612284955D00845C35 /* AppDelegate.swift */; };
 		A95594642284955D00845C35 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95594632284955D00845C35 /* LoginVC.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A922D2C922945877005194D9 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		A92B689D228B219A0046A111 /* ListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
 		A955945E2284955D00845C35 /* LeadCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeadCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95594612284955D00845C35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				A92B689D228B219A0046A111 /* ListTVC.swift */,
 				A9BD4D16228F05AC002D4085 /* Classes.swift */,
 				A9BD4D18228F1738002D4085 /* FormData.swift */,
+				A922D2C922945877005194D9 /* StorageManager.swift */,
 			);
 			path = LeadCollection;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				A95594642284955D00845C35 /* LoginVC.swift in Sources */,
 				A92B689E228B219A0046A111 /* ListTVC.swift in Sources */,
 				A95594622284955D00845C35 /* AppDelegate.swift in Sources */,
+				A922D2CA22945877005194D9 /* StorageManager.swift in Sources */,
 				A9BD4D17228F05AC002D4085 /* Classes.swift in Sources */,
 				A95594742284A7A800845C35 /* FormVC.swift in Sources */,
 				A9BD4D19228F1738002D4085 /* FormData.swift in Sources */,
