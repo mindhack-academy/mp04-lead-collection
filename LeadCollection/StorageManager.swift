@@ -23,10 +23,17 @@ class StorageManager {
     }
     
     func saveDataToLocalStorage() {
-        
+        if let jsonData = try? JSONEncoder().encode(collectedData),
+            let jsonString = String(data: jsonData, encoding: .utf8) {
+            UserDefaults.standard.set(jsonString, forKey: "collectedData")
+        }
     }
     
     func getDataFromLocalStorage() {
-        
+        if let jsonString = UserDefaults.standard.string(forKey: "collectedData"),
+            let jsonData = jsonString.data(using: .utf8),
+            let decodedData = try? JSONDecoder().decode([FormData].self, from: jsonData) {
+            collectedData = decodedData
+        }
     }
 }
